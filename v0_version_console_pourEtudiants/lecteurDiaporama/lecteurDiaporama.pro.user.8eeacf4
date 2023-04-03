@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 7.0.2, 2023-04-03T11:55:15. -->
+<!-- Written by QtCreator 7.0.2, 2023-03-29T17:43:42. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
-  <value type="QByteArray">{eaadea9f-ffa8-442e-b903-ef5111112d8d}</value>
+  <value type="QByteArray">{8eeacf4e-8765-4ab5-92a7-ab5116eb242e}</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -99,8 +99,8 @@
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
     <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">\\haya\dossiersetud\lkiss\Documents\IUT\A1\S2.01\v0_version_console_pourEtudiants\build-lecteurDiaporama-Desktop_Qt_6_3_1_MinGW_64_bit-Debug</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">//haya/dossiersetud/lkiss/Documents/IUT/A1/S2.01/v0_version_console_pourEtudiants/build-lecteurDiaporama-Desktop_Qt_6_3_1_MinGW_64_bit-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">F:\Documents\IUT\A1\S2.01\v0_version_console_pourEtudiants\build-lecteurDiaporama-Desktop_Qt_6_3_1_MinGW_64_bit-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">F:/Documents/IUT/A1/S2.01/v0_version_console_pourEtudiants/build-lecteurDiaporama-Desktop_Qt_6_3_1_MinGW_64_bit-Debug</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -158,15 +158,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration://haya/dossiersetud/lkiss/Documents/IUT/A1/S2.01/v0_version_console_pourEtudiants/lecteurDiaporama/lecteurDiaporama.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">//haya/dossiersetud/lkiss/Documents/IUT/A1/S2.01/v0_version_console_pourEtudiants/lecteurDiaporama/lecteurDiaporama.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:F:/Documents/IUT/A1/S2.01/v0_version_console_pourEtudiants/lecteurDiaporama/lecteurDiaporama.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">F:/Documents/IUT/A1/S2.01/v0_version_console_pourEtudiants/lecteurDiaporama/lecteurDiaporama.pro</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseTerminal">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">//haya/dossiersetud/lkiss/Documents/IUT/A1/S2.01/v0_version_console_pourEtudiants/build-lecteurDiaporama-Desktop_Qt_6_3_1_MinGW_64_bit-Debug</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">F:/Documents/IUT/A1/S2.01/v0_version_console_pourEtudiants/build-lecteurDiaporama-Desktop_Qt_6_3_1_MinGW_64_bit-Debug</value>
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>

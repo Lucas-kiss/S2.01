@@ -79,6 +79,27 @@ void Lecteur::viderDiaporama()
 
 void Lecteur::afficher()
 {
+    if(numDiaporamaCourant() > 0)
+    {
+        cout<<numDiaporamaCourant()<<endl;
+        if(nbImages()!=0)
+        {
+            for(unsigned i=0;i<nbImages();i++)
+            {
+               _diaporama[i]->afficher() ;
+            }
+        }
+        else
+        {
+            cout << "diaporama vide"<<endl;
+        }
+    }
+    else
+    {
+        cout << "vide"<< endl;
+    }
+
+
     /* affiche les information sur le lecteur :
      * 1) vide (si num. de diaporama = 0) OU BIEN  numéro de diaporama affiché
      * 2) Si un diaporama courant est chargé (num. de diaporama > 0), affiche l'image courante OU BIEN 'diaporama vide'
