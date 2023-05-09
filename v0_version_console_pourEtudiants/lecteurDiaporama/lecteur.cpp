@@ -101,11 +101,9 @@ void Lecteur::afficher()
     if(numDiaporamaCourant()>0){
         cout<<numDiaporamaCourant()<<endl;
         if (nbImages()!=0){
-            unsigned int taille = nbImages();
-            for (unsigned int i = 0; i < taille ; i++)
-            {
-                _diaporama[i]->afficher();
-            }
+            ui->lRang->setText((QString::fromStdString(_diaporama[_posImageCourante]->getChemin())));
+            ui->lImage->setPixmap(QPixmap(QString::fromStdString(_diaporama[_posImageCourante]->getChemin())));
+            ui->lImage->setAlignment(Qt::AlignCenter);
         }else
             {
                 cout << "diaporama vide"<<endl;
