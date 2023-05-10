@@ -31,6 +31,8 @@ LecteurVue::LecteurVue(QWidget *parent)
        imageACharger = new Image(4, "personne", "Grincheux", "F:/Documents/IUT/A1/S2.01/v2/LecteurVue/ressources/cartesDisney/disney_2.gif");
        _diaporama.push_back(imageACharger);
 
+        statusBar()->showMessage(tr("Mode Manuel"));
+
 
        (*this)._posImageCourante = 0;
        _numDiaporamaCourant = 1;
@@ -189,7 +191,8 @@ void LecteurVue::afficher()
             ui->lRang->setText((QString::number(_diaporama[_posImageCourante]->getRang())));
             ui->lImage->setPixmap(QPixmap(QString::fromStdString(_diaporama[_posImageCourante]->getChemin())));
             ui->lImage->setAlignment(Qt::AlignCenter);
-            ui->lCategorie->setPixmap(QPixmap(QString::fromStdString(_diaporama[_posImageCourante]->getCategorie())));
+            ui->lCategorie->setText(QString::fromStdString(_diaporama[_posImageCourante]->getCategorie()));
+            ui->lTitre->setText((QString::fromStdString(_diaporama[_posImageCourante]->getTitre())));
         }else
             {
                 cout << "diaporama vide"<<endl;

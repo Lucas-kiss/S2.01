@@ -19,6 +19,8 @@ LecteurVue::LecteurVue(QWidget *parent)
     QObject::connect( ui->actionVitesse_de_defilement, SIGNAL(clicked()), this, SLOT(ChangerVitesse()) );
     QObject::connect( ui->actionA_propos_de, SIGNAL(triggered()), this, SLOT(SeRenseigner()) );
 
+    statusBar()->showMessage(tr("Mode Manuel"));
+
 }
 
 LecteurVue::~LecteurVue()

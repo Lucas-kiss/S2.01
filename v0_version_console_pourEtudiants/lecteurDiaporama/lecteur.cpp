@@ -8,24 +8,25 @@ Lecteur::Lecteur()
 
 void Lecteur::avancer()
 {
-    if (_posImageCourante==nbImages())
+    if ((*this)._posImageCourante==nbImages()-1)
     {
-        _posImageCourante=0;
+        (*this)._posImageCourante=0;
     }else{
-        _posImageCourante+=1;
+        (*this)._posImageCourante=(*this)._posImageCourante+1;
     }
 
 }
 
 void Lecteur::reculer()
 {
-    if (_posImageCourante==0)
+    if ((*this)._posImageCourante==0)
     {
-        _posImageCourante=nbImages();
+        (*this)._posImageCourante=nbImages()-1;
     }else{
-        _posImageCourante-=1;
+        (*this)._posImageCourante=(*this)._posImageCourante-1;
     }
 }
+
 
 void Lecteur::changerDiaporama(unsigned int pNumDiaporama)
 {
@@ -101,9 +102,11 @@ void Lecteur::afficher()
     if(numDiaporamaCourant()>0){
         cout<<numDiaporamaCourant()<<endl;
         if (nbImages()!=0){
-            ui->lRang->setText((QString::fromStdString(_diaporama[_posImageCourante]->getChemin())));
-            ui->lImage->setPixmap(QPixmap(QString::fromStdString(_diaporama[_posImageCourante]->getChemin())));
-            ui->lImage->setAlignment(Qt::AlignCenter);
+            unsigned int taille = nbImages();
+            for (unsigned int i = 0; i < taille ; i++)
+            {
+                _diaporama[i]->afficher();
+            }
         }else
             {
                 cout << "diaporama vide"<<endl;
