@@ -36,7 +36,7 @@ private:
                                         Indéfini quand diaporama vide.
                                         Démarre à 0 quand diaporama non vide */
     QTimer timer;
-    unsigned int TPS = 2000;// durer du timer
+    unsigned int TPS = 2000;// durée du timer
     bool vider = false; // indicateur pour afficher les element graphiques
     Database *db; // pointeur vers la classe database
     QString nomDiapo; //nom du dipoarama
@@ -44,7 +44,7 @@ private:
 private:
     void chargerDiaporama();    // charge dans _diaporama les images du _numDiaporamaCourant
     void viderDiaporama();      // vide _diaporama de tous ses objets image et les delete
-    void majLabel(bool);
+    void majLabel(bool);        // met à jour les labels affichés dans la fenêtre
     unsigned int getVitesse();          // retourne la vitesse à laquelle défile les diapositives
     void setVitesse(unsigned int);      // change la vitesse à laquelle défile les diapositives selon l'entier donné
     void avancer();             // incrémente _posImageCourante, modulo nbImages()
@@ -53,15 +53,15 @@ private:
     void afficher();            // affiche les informations sur lecteur-diaporama et image courante
 
 public slots:
-    void LancerDiapo();
-    void ArreterDiapo();
-    void AllerAuSuivant();
-    void AllerAuPrecedent();
-    void SuivantAuto();
-    void Quitter();
-    void ChargerDiapo();
-    void EnleverDiapo();
-    void ChangerVitesse();
-    void SeRenseigner();
+    void LancerDiapo(); // Slot pour lancer le diaporama en mode automatique
+    void ArreterDiapo(); // Slot pour arrêter le diaporama en mode automatique
+    void AllerAuSuivant(); // Slot pour passer à l'image suivante dans le diaporama
+    void AllerAuPrecedent(); // Slot pour revenir à l'image précédente dans le diaporama
+    void SuivantAuto(); // Slot appelé à intervalles réguliers pour passer automatiquement à l'image suivante
+    void Quitter(); // Slot pour quitter l'application
+    void ChargerDiapo(); // Slot pour charger un diaporama
+    void EnleverDiapo(); // Slot pour supprimer un diaporama
+    void ChangerVitesse(); // Slot pour changer la vitesse de défilement du diaporama
+    void SeRenseigner(); // Slot pour afficher des informations sur l'application
    };
 #endif // LECTEURVUE_H

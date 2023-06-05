@@ -21,7 +21,7 @@ public:
     ~LecteurVue();
     unsigned int nbImages();    // affiche la taille de _diaporama
     Image* imageCourante();     // retourne le pointeur vers l'image courante
-    unsigned int numDiaporamaCourant();
+    unsigned int numDiaporamaCourant(); // retourne le numéro du diaporama courant
 
 private:
     Ui::LecteurVue *ui;
@@ -42,15 +42,15 @@ private:
     void afficher();            // affiche les informations sur lecteur-diaporama et image courante
 
 public slots:
-    void LancerDiapo();
-    void ArreterDiapo();
-    void AllerAuSuivant();
-    void AllerAuPrecedent();
-    void SuivantAuto();
-    void Quitter();
-    void ChargerDiapo();
-    void EnleverDiapo();
-    void ChangerVitesse();
-    void SeRenseigner();
+    void LancerDiapo(); // Slot pour lancer le diaporama en mode automatique
+    void ArreterDiapo(); // Slot pour arrêter le mode automatique du diaporama et passer en mode manuel
+    void AllerAuSuivant(); // Slot pour passer à l'image suivante dans le diaporama
+    void AllerAuPrecedent(); // Slot pour passer à l'image précédente dans le diaporama
+    void Quitter(); // Slot pour quitter l'application
+    void ChargerDiapo(); // Slot pour charger un diaporama
+    void EnleverDiapo(); // Slot pour enlever un diaporama
+    void ChangerVitesse(); // Slot pour changer la vitesse du diaporama
+    void SeRenseigner(); // Slot pour obtenir des informations supplémentaires
+    void SuivantAuto(); // Slot appelé à intervalles réguliers pour passer automatiquement à l'image suivante
     };
 #endif // LECTEURVUE_H
