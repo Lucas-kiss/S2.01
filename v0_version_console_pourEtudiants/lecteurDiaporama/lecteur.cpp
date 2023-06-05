@@ -63,7 +63,6 @@ void Lecteur::chargerDiaporama()
         for (unsigned int i = 0; i < ici-1 ; ++i) {
             if((*this)._diaporama[i]->getRang()>(*this)._diaporama[i+1]->getRang())
             {
-                cout<<"test"<<endl;
                 copy = (*this)._diaporama.at(i);
                 (*this)._diaporama.at(i)=(*this)._diaporama.at(i+1);
                 (*this)._diaporama.at(i+1)=copy;

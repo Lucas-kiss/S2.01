@@ -22,13 +22,13 @@ LecteurVue::LecteurVue(QWidget *parent)
     QObject::connect( ui->actionA_propos_de, SIGNAL(triggered()), this, SLOT(SeRenseigner()) );
 
     Image* imageACharger;
-       imageACharger = new Image(1, "personne", "Blanche Neige", "F:/Documents/IUT/A1/S2.01/v2/LecteurVue/ressources/cartesDisney/disney_19.gif");
+       imageACharger = new Image(1, "personne", "Blanche Neige", "F:/Documents/IUT/A1/S2.01/v2/LecteurVue_v2/ressources/cartesDisney/disney_19.gif");
        _diaporama.push_back(imageACharger);
-       imageACharger = new Image(2, "personne", "Cendrillon", "F:/Documents/IUT/A1/S2.01/v2/LecteurVue/ressources/cartesDisney/Disney_0.png");
+       imageACharger = new Image(2, "personne", "Cendrillon", "F:/Documents/IUT/A1/S2.01/v2/LecteurVue_v2/ressources/cartesDisney/Disney_0.png");
        _diaporama.push_back(imageACharger);
-       imageACharger = new Image(3, "animal", "Mickey", "F:/Documents/IUT/A1/S2.01/v2/LecteurVue/ressources/cartesDisney/disney_1.gif");
+       imageACharger = new Image(3, "animal", "Mickey", "F:/Documents/IUT/A1/S2.01/v2/LecteurVue_v2/ressources/cartesDisney/disney_1.gif");
        _diaporama.push_back(imageACharger);
-       imageACharger = new Image(4, "personne", "Grincheux", "F:/Documents/IUT/A1/S2.01/v2/LecteurVue/ressources/cartesDisney/disney_2.gif");
+       imageACharger = new Image(4, "personne", "Grincheux", "F:/Documents/IUT/A1/S2.01/v2/LecteurVue_v2/ressources/cartesDisney/disney_2.gif");
        _diaporama.push_back(imageACharger);
 
         statusBar()->showMessage(tr("Mode Manuel"));
@@ -46,6 +46,7 @@ LecteurVue::~LecteurVue()
 
 void LecteurVue::LancerDiapo()
 {
+    statusBar()->showMessage(tr("Mode auto"));
     qDebug() << "Lancer diapo fonctionnel" << Qt::endl;
 }
 
@@ -56,19 +57,21 @@ void LecteurVue::ArreterDiapo()
 
 void LecteurVue::AllerAuSuivant()
 {
+    statusBar()->showMessage(tr("Mode Manuel"));
     avancer();
     afficher();
 }
 
 void LecteurVue::AllerAuPrecedent()
 {
+    statusBar()->showMessage(tr("Mode Manuel"));
     reculer();
     afficher();
 }
 
 void LecteurVue::Quitter()
 {
-    this->hide();
+    this->close();
 }
 
 void LecteurVue::ChargerDiapo()
@@ -89,7 +92,7 @@ void LecteurVue::ChangerVitesse()
 void LecteurVue::SeRenseigner()
 {
     QMessageBox msgBox;
-    msgBox.setText("Version: v2 /nDate de Creation : 03/05/2023 /nAuteurs : KISS Lucas/DUBOS Lucie");
+    msgBox.setText("Version: v2\nDate de Creation : 03/05/2023 \nAuteurs : KISS Lucas/DUBOS Lucie");
     msgBox.exec();
 }
 
