@@ -1,9 +1,9 @@
 #include "LecteurVue.h" // Inclusion du fichier d'en-tête de la classe LecteurVue
 #include "ui_LecteurVue.h" // Inclusion du fichier d'en-tête généré par l'outil de conception Qt
 
-#include <QApplication> // Inclusion de la classe QApplication
-#include<QMessageBox>   // Inclusion de la classe QMessageBox
-#include<QInputDialog>  // Inclusion de la classe QInputDialog
+#include <QApplication>
+#include <QMessageBox>
+#include <QInputDialog>
 
 LecteurVue::LecteurVue(QWidget *parent)
     : QMainWindow(parent)
@@ -13,15 +13,16 @@ LecteurVue::LecteurVue(QWidget *parent)
 
     // Connexion des signaux (interactions de l'utilisateur) aux slots correspondants
     QObject::connect(&timer, SIGNAL(timeout()), this, SLOT(SuivantAuto()));
-    QObject::connect(ui->bLancerDiapo, SIGNAL(clicked()), this, SLOT(LancerDiapo()));
-    QObject::connect(ui->bArreterDiapo, SIGNAL(clicked()), this, SLOT(ArreterDiapo()));
-    QObject::connect(ui->bSuivant, SIGNAL(clicked()), this, SLOT(AllerAuSuivant()));
-    QObject::connect(ui->bPrecedent, SIGNAL(clicked()), this, SLOT(AllerAuPrecedent()));
-    QObject::connect(ui->actionQuitter, SIGNAL(clicked()), this, SLOT(Quitter()));
-    QObject::connect(ui->actionCharger_diaporama, SIGNAL(clicked()), this, SLOT(ChargerDiapo()));
-    QObject::connect(ui->actionEnlever_diaporama, SIGNAL(clicked()), this, SLOT(EnleverDiapo()));
-    QObject::connect(ui->actionVitesse_de_defilement, SIGNAL(clicked()), this, SLOT(ChangerVitesse()));
-    QObject::connect(ui->actionA_propos_de, SIGNAL(triggered()), this, SLOT(SeRenseigner()));
+    QObject::connect( ui->bLancerDiapo, SIGNAL(clicked()), this, SLOT(LancerDiapo()) );
+    QObject::connect( ui->bArreterDiapo, SIGNAL(clicked()), this, SLOT(ArreterDiapo()) );
+    QObject::connect( ui->bSuivant, SIGNAL(clicked()), this, SLOT(AllerAuSuivant()) );
+    QObject::connect( ui->bPrecedent, SIGNAL(clicked()), this, SLOT(AllerAuPrecedent()) );
+    QObject::connect( ui->actionQuitter, SIGNAL(triggered()), this, SLOT(Quitter()) );
+    QObject::connect( ui->actionCharger_diaporama, SIGNAL(triggered()), this, SLOT(ChargerDiapo()) );
+    QObject::connect( ui->actionEnlever_diaporama, SIGNAL(triggered()), this, SLOT(EnleverDiapo()) );
+    QObject::connect( ui->actionVitesse_de_defilement, SIGNAL(triggered()), this, SLOT(ChangerVitesse()) );
+    QObject::connect( ui->actionA_propos_de, SIGNAL(triggered()), this, SLOT(SeRenseigner()) );
+
 
     majLabel(vider); // Appel d'une fonction majLabel() avec l'argument "vider"
 

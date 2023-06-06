@@ -10,15 +10,15 @@ LecteurVue::LecteurVue(QWidget *parent)
     ui->setupUi(this); // Configuration de l'interface utilisateur de la fenêtre
 
     // Connexion des signaux (interactions de l'utilisateur) aux slots correspondants
-    QObject::connect(ui->bLancerDiapo, SIGNAL(clicked()), this, SLOT(LancerDiapo()));
-    QObject::connect(ui->bArreterDiapo, SIGNAL(clicked()), this, SLOT(ArreterDiapo()));
-    QObject::connect(ui->bSuivant, SIGNAL(clicked()), this, SLOT(AllerAuSuivant()));
-    QObject::connect(ui->bPrecedent, SIGNAL(clicked()), this, SLOT(AllerAuPrecedent()));
-    QObject::connect(ui->actionQuitter, SIGNAL(clicked()), this, SLOT(Quitter()));
-    QObject::connect(ui->actionCharger_diaporama, SIGNAL(clicked()), this, SLOT(ChargerDiapo()));
-    QObject::connect(ui->actionEnlever_diaporama, SIGNAL(clicked()), this, SLOT(EnleverDiapo()));
-    QObject::connect(ui->actionVitesse_de_defilement, SIGNAL(clicked()), this, SLOT(ChangerVitesse()));
-    QObject::connect(ui->actionA_propos_de, SIGNAL(triggered()), this, SLOT(SeRenseigner()));
+    QObject::connect( ui->bLancerDiapo, SIGNAL(clicked()), this, SLOT(LancerDiapo()) );
+    QObject::connect( ui->bArreterDiapo, SIGNAL(clicked()), this, SLOT(ArreterDiapo()) );
+    QObject::connect( ui->bSuivant, SIGNAL(clicked()), this, SLOT(AllerAuSuivant()) );
+    QObject::connect( ui->bPrecedent, SIGNAL(clicked()), this, SLOT(AllerAuPrecedent()) );
+    QObject::connect( ui->actionQuitter, SIGNAL(triggered()), this, SLOT(Quitter()) );
+    QObject::connect( ui->actionCharger_diaporama, SIGNAL(triggered()), this, SLOT(ChargerDiapo()) );
+    QObject::connect( ui->actionEnlever_diaporama, SIGNAL(triggered()), this, SLOT(EnleverDiapo()) );
+    QObject::connect( ui->actionVitesse_de_defilement, SIGNAL(triggered()), this, SLOT(ChangerVitesse()) );
+    QObject::connect( ui->actionA_propos_de, SIGNAL(triggered()), this, SLOT(SeRenseigner()) );
 
     statusBar()->showMessage(tr("Mode Manuel")); // Affichage d'un message dans la barre de statut
 }
