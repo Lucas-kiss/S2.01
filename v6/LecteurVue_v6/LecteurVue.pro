@@ -10,6 +10,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    choixdiapo.cpp \
     diapo.cpp \
     image.cpp \
     main.cpp \
@@ -18,12 +19,14 @@ SOURCES += \
 
 HEADERS += \
     LecteurVue.h \
+    choixdiapo.h \
     diapo.h \
     image.h \
     database.h
 
 FORMS += \
-    LecteurVue.ui
+    LecteurVue.ui \
+    choixdiapo.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

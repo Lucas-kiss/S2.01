@@ -210,13 +210,13 @@ void LecteurVue::chargerDiaporama()
        Dans une version ultérieure, ces données proviendront d'une base de données,
        et correspondront au diaporama choisi */
     Image* imageACharger;
-    imageACharger = new Image(3, "personne", "Blanche Neige", "F:/Documents/IUT/A1/S2.01/v3/LecteurVue_v3/ressources/cartesDisney/carteDisney2.gif");
+    imageACharger = new Image(3, "personne", "Blanche Neige", "F:/Documents/IUT/A1/S2.01/v4/LecteurVue_v4/ressources/cartesDisney/carteDisney2.gif");
     _diaporama.push_back(imageACharger);
-    imageACharger = new Image(2, "personne", "Cendrillon", "F:/Documents/IUT/A1/S2.01/v3/LecteurVue_v3/ressources/cartesDisney/carteDisney4.gif");
+    imageACharger = new Image(2, "personne", "Cendrillon", "F:/Documents/IUT/A1/S2.01/v4/LecteurVue_v4/ressources/cartesDisney/carteDisney4.gif");
     _diaporama.push_back(imageACharger);
-    imageACharger = new Image(4, "animal", "Mickey", "F:/Documents/IUT/A1/S2.01/v3/LecteurVue_v3/ressources/cartesDisney/carteDisney1.gif");
+    imageACharger = new Image(4, "animal", "Mickey", "F:/Documents/IUT/A1/S2.01/v4/LecteurVue_v4/ressources/cartesDisney/carteDisney1.gif");
     _diaporama.push_back(imageACharger);
-    imageACharger = new Image(1, "personne", "Grincheux", "F:/Documents/IUT/A1/S2.01/v3/LecteurVue_v3/ressources/cartesDisney/carteDisney1.gif");
+    imageACharger = new Image(1, "personne", "Grincheux", "F:/Documents/IUT/A1/S2.01/v4/LecteurVue_v4/ressources/cartesDisney/carteDisney1.gif");
     _diaporama.push_back(imageACharger);
 
     // Trier les images en fonction du rang
