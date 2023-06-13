@@ -9,8 +9,10 @@ LecteurVue::LecteurVue(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::LecteurVue)
 {
-    ui->setupUi(this); // Configuration de l'interface utilisateur de la fenêtre
 
+    ui->setupUi(this); // Configuration de l'interface utilisateur de la fenêtre
+    db=new Database(); // Initialise la base de données
+    db->openDataBase(); // Ouvre la base de données
     // Connexion des signaux (interactions de l'utilisateur) aux slots correspondants
     QObject::connect(&timer, SIGNAL(timeout()), this, SLOT(SuivantAuto()));
     QObject::connect( ui->bLancerDiapo, SIGNAL(clicked()), this, SLOT(LancerDiapo()) );

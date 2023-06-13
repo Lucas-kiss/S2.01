@@ -26,19 +26,19 @@ LecteurVue::LecteurVue(QWidget *parent)
     Image* imageACharger;
 
     // Création et ajout de l'image "Blanche Neige" au diaporama
-    imageACharger = new Image(1, "personne", "Blanche Neige", "F:/Documents/IUT/A1/S2.01/v2/LecteurVue_v2/ressources/cartesDisney/disney_19.gif");
+    imageACharger = new Image(1, "personne", "Blanche Neige", "..\\LecteurVue_v3\\ressources\\cartesDisney\\disney_19.gif");
     _diaporama.push_back(imageACharger);
 
     // Création et ajout de l'image "Cendrillon" au diaporama
-    imageACharger = new Image(2, "personne", "F:/Documents/IUT/A1/S2.01/v2/LecteurVue_v2/ressources/cartesDisney/Disney_0.png");
+    imageACharger = new Image(2, "personne","Cendrillon", "..\\LecteurVue_v3\\ressources\\cartesDisney\\Disney_4.gif");
     _diaporama.push_back(imageACharger);
 
     // Création et ajout de l'image "Mickey" au diaporama
-    imageACharger = new Image(3, "animal", "Mickey", "F:/Documents/IUT/A1/S2.01/v2/LecteurVue_v2/ressources/cartesDisney/disney_1.gif");
+    imageACharger = new Image(3, "animal", "Mickey", "..\\LecteurVue_v3\\ressources\\cartesDisney\\disney_1.gif");
     _diaporama.push_back(imageACharger);
 
     // Création et ajout de l'image "Grincheux" au diaporama
-    imageACharger = new Image(4, "personne", "Grincheux", "F:/Documents/IUT/A1/S2.01/v2/LecteurVue_v2/ressources/cartesDisney/disney_2.gif");
+    imageACharger = new Image(4, "personne", "Grincheux", "..\\LecteurVue_v3\\ressources\\cartesDisney\\disney_2.gif");
     _diaporama.push_back(imageACharger);
 
 
@@ -201,13 +201,13 @@ void LecteurVue::chargerDiaporama()
        Dans une version ultérieure, ces données proviendront d'une base de données,
        et correspondront au diaporama choisi */
     Image* imageACharger;
-    imageACharger = new Image(3, "personne", "Blanche Neige", "F:/Documents/IUT/A1/S2.01/v3/LecteurVue_v3/ressources/cartesDisney/carteDisney2.gif");
+    imageACharger = new Image(3, "personne", "Blanche Neige", "..\\LecteurVue_v3\\ressources\\cartesDisney\\carteDisney2.gif");
     _diaporama.push_back(imageACharger);
-    imageACharger = new Image(2, "personne", "Cendrillon", "F:/Documents/IUT/A1/S2.01/v3/LecteurVue_v3/ressources/cartesDisney/carteDisney4.gif");
+    imageACharger = new Image(2, "personne", "Cendrillon", "..\\LecteurVue_v3\\ressources\\cartesDisney\\carteDisney4.gif");
     _diaporama.push_back(imageACharger);
-    imageACharger = new Image(4, "animal", "Mickey", "F:/Documents/IUT/A1/S2.01/v3/LecteurVue_v3/ressources/cartesDisney/carteDisney1.gif");
+    imageACharger = new Image(4, "animal", "Mickey", "..\\LecteurVue_v3\\ressources\\cartesDisney\\carteDisney1.gif");
     _diaporama.push_back(imageACharger);
-    imageACharger = new Image(1, "personne", "Grincheux", "F:/Documents/IUT/A1/S2.01/v3/LecteurVue_v3/ressources/cartesDisney/carteDisney1.gif");
+    imageACharger = new Image(1, "personne", "Grincheux", "..\\LecteurVue_v3\\ressources\\cartesDisney\\carteDisney1.gif");
     _diaporama.push_back(imageACharger);
 
     // Trier les images en fonction du rang

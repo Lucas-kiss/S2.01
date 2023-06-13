@@ -157,7 +157,7 @@ void LecteurVue::setVitesse(unsigned int v)
 void LecteurVue::SeRenseigner()
 {
     QMessageBox msgBox;
-    msgBox.setText("Version: v4\nDate de Creation : 16/05/2023 \nAuteurs : KISS Lucas/DUBOS Lucie");
+    msgBox.setText("Version: v6\nDate de Creation : 16/05/2023 \nAuteurs : KISS Lucas/DUBOS Lucie");
     msgBox.exec();
 }
 

@@ -4,7 +4,7 @@
 #include <QSqlDatabase> // Inclusion du fichier d'en-tête QSqlDatabase pour utiliser la classe QSqlDatabase
 #include <QSqlQuery> // Inclusion du fichier d'en-tête QSqlQuery pour utiliser la classe QSqlQuery
 
-#define DATABASE_NAME "nodenot_bd9" // Définition d'une constante symbolique DATABASE_NAME avec la valeur "S2_01"
+#define DATABASE_NAME "S2_01" // Définition d'une constante symbolique DATABASE_NAME avec la valeur "S2_01"
 #define CONNECT_TYPE "QODBC" // Définition d'une constante symbolique CONNECT_TYPE avec la valeur "QODBC"
 
 class Database

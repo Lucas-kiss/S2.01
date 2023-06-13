@@ -1,0 +1,5 @@
+Nous n'avons pas séparé "lecteur" et "lecteurvue" car nous pensions que c'était nécessaire uniquement dans la version où nous avons réalisé le modèle MVP.
+
+Étant donné que nous étions deux sur le projet, nous n'avons pas pu avancer au maximum dans les différentes versions.
+
+Nous avons ajouté un fichier "bilan.pdf" qui fait office de bilan pour toutes les versions, car nous avons oublié de le faire dans le rapport.

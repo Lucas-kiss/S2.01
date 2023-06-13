@@ -7,7 +7,7 @@
 #include "choixDiapo.h" // Inclusion du fichier d'en-tête de la classe choixDiapo
 #include "diapo.h" // Inclusion du fichier d'en-tête de la classe Diapo
 
-#define CHEMIN "F:/Documents/IUT/A1/S2.01/v6/LecteurVue_v6/ressources" // Définition d'une constante CHEMIN
+#define CHEMIN "./ressources" // Définition d'une constante CHEMIN
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class LecteurVue; }

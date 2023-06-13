@@ -12,18 +12,17 @@ class choixDiapo : public QDialog
     Q_OBJECT
 
 public:
-    explicit choixDiapo(QWidget *parent = nullptr);    // Constructor
-    ~choixDiapo();                                     // Destructor
+    explicit choixDiapo(QWidget *parent = nullptr); // Constructeur
+    ~choixDiapo(); // Destructeur
 
-    void afficher();                                    // Method for displaying the diaporamas
-    QString getLigneSelect();                           // Method for getting the selected diaporama
-
+    void afficher();                                    // Méthode pour afficher les diaporamas
+    QString getLigneSelect();                           // Méthode pour obtenir le diaporama sélectionné
 private:
-    Ui::choixDiapo *ui;                                 // Pointer to the UI object
-    QString numDiapoSelect;                             // Selected diaporama number
+    Ui::choixDiapo *ui; // Pointeur vers l'objet UI
+    QString numDiapoSelect; // Numéro du diaporama sélectionné
 
 private slots:
-    void clicSurTable(int);                             // Slot for handling table cell clicks
+    void clicSurTable(int); // Slot pour gérer les clics sur les cellules de la table
 
 };
 

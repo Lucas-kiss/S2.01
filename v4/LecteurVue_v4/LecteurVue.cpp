@@ -207,19 +207,18 @@ void LecteurVue::changerDiaporama(unsigned int pNumDiaporama)
 void LecteurVue::chargerDiaporama()
 {
     /* Chargement des images associées au diaporama courant
-       Dans une version ultérieure, ces données proviendront d'une base de données,
-       et correspondront au diaporama choisi */
+           Dans une version ultérieure, ces données proviendront d'une base de données,
+           et correspondront au diaporama choisi */
     Image* imageACharger;
-    imageACharger = new Image(3, "personne", "Blanche Neige", "F:/Documents/IUT/A1/S2.01/v4/LecteurVue_v4/ressources/cartesDisney/carteDisney2.gif");
+    imageACharger = new Image(1, "personne", "Blanche Neige", "..\\LecteurVue_v4\\ressources\\cartesDisney\\disney_19.gif");
     _diaporama.push_back(imageACharger);
-    imageACharger = new Image(2, "personne", "Cendrillon", "F:/Documents/IUT/A1/S2.01/v4/LecteurVue_v4/ressources/cartesDisney/carteDisney4.gif");
+    imageACharger = new Image(2, "personne", "Cendrillon", "..\\LecteurVue_v4\\ressources\\cartesDisney\\Disney_0.png");
     _diaporama.push_back(imageACharger);
-    imageACharger = new Image(4, "animal", "Mickey", "F:/Documents/IUT/A1/S2.01/v4/LecteurVue_v4/ressources/cartesDisney/carteDisney1.gif");
+    imageACharger = new Image(3, "animal", "Mickey", "..\\LecteurVue_v4\\ressources\\cartesDisney\\disney_1.gif");
     _diaporama.push_back(imageACharger);
-    imageACharger = new Image(1, "personne", "Grincheux", "F:/Documents/IUT/A1/S2.01/v4/LecteurVue_v4/ressources/cartesDisney/carteDisney1.gif");
+    imageACharger = new Image(4, "personne", "Grincheux", "..\\LecteurVue_v4\\ressources\\cartesDisney\\disney_2.gif");
     _diaporama.push_back(imageACharger);
 
-    // Trier les images en fonction du rang
     Image* copy;
     for (unsigned int ici = nbImages(); ici > 1; ici--) {
         for (unsigned int i = 0; i < ici-1 ; ++i) {
@@ -233,8 +232,7 @@ void LecteurVue::chargerDiaporama()
     }
 
 
-
-    (*this)._posImageCourante = 0; // initialiser la position de l'image courante à 0
+    (*this)._posImageCourante = 0;
 
     vider=true;
 
@@ -264,9 +262,7 @@ void LecteurVue::viderDiaporama()
 
 void LecteurVue::majLabel(bool ok)
 {
-    if (ok) // Si ok est vrai
-    {
-        // Met à jour les étiquettes avec les valeurs de l'image courante dans le diaporama
+    if(ok){
         ui->lRang->setText((QString::number(_diaporama[_posImageCourante]->getRang())));
         ui->lNomRang->setText((tr("Rang : ")));
         ui->lImage->setPixmap(QPixmap(QString::fromStdString(_diaporama[_posImageCourante]->getChemin())));
@@ -276,9 +272,7 @@ void LecteurVue::majLabel(bool ok)
         ui->lTitre->setText((QString::fromStdString(_diaporama[_posImageCourante]->getTitre())));
         ui->lNomDiapo->setText((tr("Nom Diaporama")));
     }
-    else // Si ok est faux
-    {
-        // Réinitialise les étiquettes en tant que chaînes vides
+    else{
         ui->lRang->setText((tr("")));
         ui->lNomRang->setText((tr("")));
         ui->lImage->setPixmap(QPixmap(tr("")));
@@ -286,6 +280,7 @@ void LecteurVue::majLabel(bool ok)
         ui->lNomCategorie->setText(tr(""));
         ui->lTitre->setText(tr(""));
         ui->lNomDiapo->setText((tr("")));
+
     }
 }
 

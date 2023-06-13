@@ -1,0 +1,3 @@
+Les images se trouvent directement dans chaque version 
+
+Pour la v5 et v6 on as pas trouver comment mettre un chemin absolue
